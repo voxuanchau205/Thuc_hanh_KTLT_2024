@@ -23,4 +23,35 @@ class ATM:
              print("Please login first.")
      def logout (self):
          self.is_logged_in = False
-         print ("Logged out successfully.")
+def main(): 
+    atm = ATM()
+    while True:
+          print("\n- MENU ATM")
+          print("1. Login")
+          print("2. Check balance")
+          print("3. Withdraw")
+          print("4. Deposit")
+          print("5. Log out")
+          print("6. Exit")
+          choice = input ("Choose function: ")
+          if choice == '1':
+              pin input ("Enter PIN: ")
+              atm.login(pin)
+          elif choice == '2':
+              atm.check_balance()
+          elif choice == '3':
+              amount = float(input("Enter the amount to withdraw: ")) 
+              atm.withdraw (amount)
+          elif choice == '4':
+              amount = float (input ("Enter amount to deposit: ")) 
+              atm.deposit(amount)
+          elif choice == '5':
+              atm.logout ()
+          elif choice == '6':
+              print("Exit program...")
+              break
+          else:
+              print("Invalid selection. Please try again.")
+if name == "_main_":
+   main()
+      
