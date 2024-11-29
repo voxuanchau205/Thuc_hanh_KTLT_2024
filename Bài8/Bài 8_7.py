@@ -6,10 +6,10 @@ colours = ['Red','Blue','Green','Pink','Black',
    'Yellow','Orange','White','Purple','Brown']
 score = 0
 # the game time left, initially 30 seconds.
-timeleft = 30
+timeleft = 120
 # function that will start the game.
 def startGame(event):
-      if timeleft == 30:
+      if timeleft == 120:
           # start the countdown timer.
            countdown()
 # run the function to
